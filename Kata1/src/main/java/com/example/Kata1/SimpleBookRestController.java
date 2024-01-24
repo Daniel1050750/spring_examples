@@ -1,15 +1,15 @@
-package com.example.hello;
+package com.example.Kata1;
 
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 @RestController
-@RequestMapping("/hello")
-public class HelloController {
+@RequestMapping("/kata1")
+public class SimpleBookRestController {
 
-    @GetMapping
-    public String get() {
-        return "Hello World!";
+    @GetMapping(produces = "application/json")
+    public String kata1() {
+        return "Hello, world!";
     }
 }
